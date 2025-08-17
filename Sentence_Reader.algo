@@ -1,0 +1,29 @@
+ALGORITHM Sentence_Reader
+VAR
+    Sentence: string
+    vowels: set of char = {"a", "e", "i", "o", "u", "A", "E", "I", "O", "U"}
+    i: integer
+    j: integer
+    TotalCharacters: integer = 0
+    NumberOfVowels: integer = 0
+    NumberOfWords: integer = 0
+BEGIN
+    write("Enter a sentence: ")
+    read(Sentence)
+    i=0
+    While (Sentence)[i] !:= "."
+        TotalCharacters += 1
+        write("Total number of characters on the sentence: " = TotalCharacters)
+
+    WHILE (i <= TotalCharacters) 
+        IF sentence[i] = vowels[1] OR sentence[i] = vowels[2] OR sentence[i] = vowels[3] OR sentence[i] = vowels[4] OR sentence[i] = vowels[5] OR sentence[i] = vowels[6] OR sentence[i] = vowels[7] OR sentence[i] = vowels[8] OR sentence[i] = vowels[9] OR sentence[i] = vowels[10] THEN
+            NumberOfVowels := NumberOfVowels + 1
+        ENDIF
+    END
+    WHILE i < TotalCharacters
+        IF TotalCharacters[i] = " " THEN
+            NumberOfWords := NumberOfWords + 1
+        i := i + 1
+        ENDIF
+    END
+END
